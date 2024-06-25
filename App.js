@@ -8,9 +8,12 @@ app.use(express.json());
 
 
 const mongooseLink =
-"mongodb+srv://foadkhatib5:FoadKh123@cluster0.l6tcsk2.mongodb.net/";
+"mongodb+srv://foadkhatib5:Foadkh1212@cluster0.l6tcsk2.mongodb.net"
+
 mongoose.connect(mongooseLink);
-mongoose.connection.on("connectes",() =>{
+
+
+mongoose.connection.on("connected",() =>{
     console.log("mongo connected")
 });
 
