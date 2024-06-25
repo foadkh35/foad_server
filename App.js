@@ -17,5 +17,9 @@ mongoose.connection.on("connected",() =>{
     console.log("mongo connected")
 });
 
+app.get('/app' , (req , res) =>{
+    res.status(200).json({name : "foad"})
+})
+
 
 module.exports=app;
